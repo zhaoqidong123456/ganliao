@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zaodong.social.fragment.main.details.VideotwoFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mVideotwo_recy"
+        android:visibility="gone"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp">
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="没有更多视频"
+        android:paddingTop="100dp"
+        android:id="@+id/mVideo_two_xian"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

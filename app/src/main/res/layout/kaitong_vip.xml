@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@mipmap/pop">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开通超级会员"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="非会员无法查看，请开通SVIP享受免费无限查看，将女神一网打尽"
+            android:layout_marginTop="160dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#C7C6C6"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="开通超级VIP"
+            android:textStyle="bold"
+            android:id="@+id/mKai_liji"
+            android:layout_marginTop="228dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+</LinearLayout>

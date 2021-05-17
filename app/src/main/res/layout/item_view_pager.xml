@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zaodong.social.ui.JzvdStdTikTok
+        android:id="@+id/jzvdStd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+
+        android:id="@+id/img_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_dianzan"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/dianzan"
+            android:gravity="center"
+            android:text="1.6w"
+            android:textSize="10sp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/tv_comments"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawableTop="@mipmap/guankancishu"
+            android:gravity="center"
+            android:text="1.6w"
+            android:textSize="10sp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:textSize="10sp"
+            android:text="1.5w"
+            android:id="@+id/share_icon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableTop="@mipmap/liwu"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/share_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@mipmap/paizhao"
+            android:gravity="center"
+            android:text="发起视频"
+            android:textColor="#ffffff"
+            android:textSize="8dp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:alpha="0"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/play_arrow" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:background="@drawable/video_item_hui">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mVideo_icon"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兔兔等你"
+                android:textColor="#ffffffff"
+                android:textSize="12sp"
+                android:id="@+id/mVideo_name"/>
+            <TextView
+                android:id="@+id/mVideo_qianming"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:text="姐夫不可以"
+                android:textColor="#ffffffff"
+                android:textSize="8sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

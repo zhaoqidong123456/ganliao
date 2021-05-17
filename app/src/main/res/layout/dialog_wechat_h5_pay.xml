@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+    <TextView
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:text="请确认微信支付是否成功"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="#3333"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_wechat_success"
+        android:textColor="#FC576C"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:text="已完成支付"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="#3333"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_wechat_failure"
+        android:textColor="#8333"
+        android:textSize="15dp"
+        android:text="支付遇到问题，重新支付"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

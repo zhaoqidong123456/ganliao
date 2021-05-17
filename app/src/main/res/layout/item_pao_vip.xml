@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="44dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/a"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/vip_pao"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兔兔等你"
+                android:textColor="#FF659E"
+                android:textSize="12sp"
+                android:id="@+id/mPao_name"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 充值了"
+                android:textColor="#ffffffff"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/mPao_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 3"
+                android:textColor="#FF659E"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:text=" 钻石"
+                android:textColor="#ffffffff"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/zuan"
+            android:layout_marginLeft="-20dp"
+            android:layout_toRightOf="@+id/a"/>
+    </RelativeLayout>
+
+</LinearLayout>

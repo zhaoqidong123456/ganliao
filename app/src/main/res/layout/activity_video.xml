@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zaodong.social.activity.VideoActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.zaodong.social.utils.FullScreenVideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mVideo_videoview"/>
+        <RelativeLayout
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <ImageButton
+                android:id="@+id/mVideo_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/main_back_bai"
+                android:background="#00000000"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

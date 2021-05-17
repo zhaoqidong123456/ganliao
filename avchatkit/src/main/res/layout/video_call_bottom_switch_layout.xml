@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/avchat_incoming_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:visibility="visible">
+    <ImageView
+        android:id="@+id/avchat_switch_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="@color/color_f2f7fc"
+        android:contentDescription="@string/empty"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/avchat_switch_camera_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/avchat_close_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/empty"
+        android:drawableTop="@drawable/avchat_close_camera_bg"
+        android:drawablePadding="5dp"
+        android:scaleType="centerInside"
+        android:text="关闭"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/avchat_video_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/color_f2f7fc"
+        android:contentDescription="@string/empty"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/avchat_mute_bg"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/avchat_video_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/color_f2f7fc"
+        android:contentDescription="@string/empty"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/avchat_video_record_selector"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/avchat_video_logout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/avchat_refuse_bg_normal"
+        android:contentDescription="@string/empty"
+        android:padding="10dp"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>

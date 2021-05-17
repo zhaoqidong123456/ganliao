@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="308dp"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@mipmap/version"/>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/mVersion_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/mVersion_quxiao"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="取消"
+                android:background="@drawable/shape_read_cancel"
+                android:textColor="#EF709D" />
+            <TextView
+                android:textFontWeight="1"
+                android:id="@+id/mVersion_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_all_read"
+                android:gravity="center"
+                android:text="更新"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

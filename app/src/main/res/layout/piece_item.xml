@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <LinearLayout
+
+        android:background="@drawable/piece_wei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mPiece_back"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_width="71dp"
+            android:layout_height="22dp"
+            android:text="3000钻石"
+            android:textColor="#ffff3e36"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:id="@+id/mPiece_counts"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="46dp"
+            android:id="@+id/mPiece_piece"
+            android:layout_height="20dp"
+            android:text="¥30.00"
+            android:textColor="#ff3c3f52"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

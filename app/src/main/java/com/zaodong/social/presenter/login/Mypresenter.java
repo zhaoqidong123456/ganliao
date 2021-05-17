@@ -1,0 +1,79 @@
+package com.zaodong.social.presenter.login;
+
+import android.util.Log;
+
+import com.zaodong.social.bean.Mybean;
+import com.zaodong.social.bean.Yzmfbean;
+import com.zaodong.social.model.RetrofitUrl;
+import com.zaodong.social.model.RetrofitUtils;
+import com.zaodong.social.model.Service;
+import com.zaodong.social.utils.MD5Utils;
+import com.zaodong.social.view.Myview;
+import com.google.gson.Gson;
+
+import java.io.IOException;
+import java.util.HashMap;
+
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
+import okhttp3.ResponseBody;
+
+public class Mypresenter implements IMypresenter{
+    private Service service;
+    private Myview myview;
+
+    public Mypresenter(Myview myview) {
+        this.myview = myview;
+        service= RetrofitUtils.getRetrofitUtils().getService();
+    }
+    @Override
+    public void loadData(String userid) {
+        final String string= RetrofitUrl.key+RetrofitUrl.channel+userid+RetrofitUrl.version1;
+        String string1 = MD5Utils.MD5(string);
+        String string2 = string1.toUpperCase();
+        HashMap<String, String> stringStringHashMap = new HashMap<>();
+        stringStringHashMap.put("channel", RetrofitUrl.channel);
+        stringStringHashMap.put("user_id",userid);
+        stringStringHashMap.put("sig",string2);
+        stringStringHashMap.put("version",RetrofitUrl.version1);
+        service.my(stringStringHashMap)
+                .subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<ResponseBody>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(ResponseBody responseBody) {
+                        try {
+                            String string3 = responseBody.string();
+                            Log.e("my",string3);
+                            Gson gson = new Gson();
+                            if (string3.contains("vip")){
+                                Mybean mybean = gson.fromJson(string3, Mybean.class);
+                                myview.showDatamy(mybean);
+                            }else {
+                                Yzmfbean yzmfbean = gson.fromJson(string3, Yzmfbean.class);
+                                myview.showDatamyf(yzmfbean);
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+
+    }
+}
