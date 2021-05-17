@@ -1,7 +1,0 @@
-include ':library'
-include ':app',
-        ':uikit',
-        ':avchatkit',
-        ':faceunity',
-        ':im'
-//        ':jrmfRpWalletlib'
